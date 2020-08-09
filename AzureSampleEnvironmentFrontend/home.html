@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Azure Sample Environment</title>
+    </head>
+    <body>
+        <h1>Azure Sample Environment</h1>
+        <hr/>
+        <form action="https://azuresampleenvironmentbackend.azurefd.net/sample1" method="get" target="iframe">
+            <h4>Click here to make request to backend and get data from database
+                <button type="submit">Service 1</button>
+            </h4>
+        </form>
+        <form action="https://azuresampleenvironmentbackend.azurefd.net/sample2" method="get" target="iframe">
+            <h4>Click here to make request to backend and get responcee from another azure sample service
+                <button type="submit">Service 2</button>
+            </h4>
+        </form>
+        <form action="https://azuresampleenvironmentbackend.azurefd.net/function" method="get" target="iframe">
+            <h4>Click here to make request to backend and get responce from azure sample function
+                <button type="submit">Function</button>
+            </h4>
+        </form>
+        <form action="https://azuresampleenvironmentbackend.azurefd.net/cache" method="get" target="iframe">
+            <h4>Click here to get sample cached data
+                <button type="submit">Cache</button>
+            </h4>
+        </form>
+        <form action="https://azuresampleenvironmentbackend.azurefd.net/unauthorisedaccess" method="get" target="iframe">
+            <h4>Click here to check firewall by making unauthorised request
+                <button type="submit">Firewall</button>
+            </h4>
+        </form>
+        <hr/>
+        <h4>Output</h4>
+        <iframe src="https://azuresampleenvironmentbackend.azurefd.net" name="iframe" height="150px" width="100%" title="Iframe"></iframe>
+        <hr/>
+        <h4>Click here to logout 
+            <button onclick="window.location.href='/';"> Logout </button>
+        </h4>
+        <hr/>
+    </body>
+</html>
