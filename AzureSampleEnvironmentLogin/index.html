@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Azure Sample Environment</title>
+    </head>
+    <body>
+        <h1>Azure Sample Environment</h1>
+        <script>
+            const Http = new XMLHttpRequest();
+            const url='https://azuresampleenvironmentlogin.azurewebsites.net/.auth/me';
+            Http.open("GET", url);
+            Http.send();
+            Http.onreadystatechange = (e) => {
+                if(Http.responseText) {
+                    window.location.href = "/home";
+                }else{
+                    window.location.href = "/login";
+                }
+            }
+        </script>
+    </body>
+</html>
